@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Затерянная душа — Митин</title>
+  <meta name="description" content="Тёмное философское фэнтези с элементами эпоса и психологической драмы." />
+
+  <!--
+    📕 КНИЖНЫЙ ВАЙБ XIX ВЕКА
+    Основные идеи стиля:
+    — бордовые и винные оттенки
+    — эффект старой бумаги
+    — спокойная, литературная подача
+  -->
+
+  <style>
+    :root {
+      --bg: #230d12;           /* более красный, тёплый винный фон */
+      --paper: #f3e7cf;        /* пергамент */
+      --ink: #2b1b1b;          /* текст, как чернила */
+      --accent: #8c1f2d;       /* более насыщенный бордовый */
+      --accent-dark: #5a0f18;  /* тёмный бордовый */
+      --muted: #7a4a4a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Georgia", "Times New Roman", serif;
+      background: radial-gradient(1200px 600px at 50% -10%, #5a1a22, transparent 55%), var(--bg);
+      color: var(--paper);
+      line-height: 1.7;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 24px;
+    }
+
+    /* Навигация */
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+      padding-bottom: 16px;
+    }
+
+    .brand {
+      font-size: 20px;
+      letter-spacing: 0.05em;
+    }
+
+    /* Кнопки */
+    .btn {
+      padding: 10px 18px;
+      border: 1px solid var(--accent);
+      background: transparent;
+      color: var(--paper);
+      font-family: inherit;
+      cursor: pointer;
+      transition: .2s ease;
+    }
+
+    .btn:hover {
+      background: var(--accent-dark);
+    }
+
+    /* Hero */
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 32px;
+      margin-top: 48px;
+    }
+
+    .hero-card {
+      background: linear-gradient(180deg, rgba(243,231,207,.08), rgba(243,231,207,.02));
+      border: 1px solid rgba(243,231,207,.2);
+      padding: 32px;
+    }
+
+    h1 {
+      font-size: clamp(34px, 4vw, 52px);
+      margin: 0 0 16px;
+    }
+
+    .lead {
+      color: #e8dcc2;
+      font-size: 18px;
+    }
+
+    .hero-cta { margin-top: 24px; }
+
+    /* Арт героини */
+    .cover {
+      border: 1px solid rgba(243,231,207,.2);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .cover .mock {
+      width: 75%;
+      aspect-ratio: 2 / 3;
+      background: linear-gradient(180deg, #7b1e26, #2b0b0f);
+      display: grid;
+      place-items: center;
+      text-align: center;
+      font-style: italic;
+    }
+
+    section { margin-top: 72px; }
+
+    h2 {
+      border-bottom: 1px solid rgba(243,231,207,.3);
+      padding-bottom: 8px;
+      margin-bottom: 24px;
+    }
+
+    .paper {
+      background: var(--paper);
+      color: var(--ink);
+      padding: 32px;
+    }
+
+    .muted { color: var(--muted); }
+
+    /* Автор */
+    .author strong { font-size: 18px; }
+
+    footer {
+      margin-top: 72px;
+      text-align: center;
+      font-size: 14px;
+      opacity: .7;
+    }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="container nav">
+    
+  </header>
+
+  <main class="container">
+
+    <div class="hero">
+      <div class="hero-card">
+        <h1>Затерянная душа</h1>
+        <p class="lead">
+          Тёмное философское фэнтези о девушке, оказавшейся в ином мире.
+          Поиск ответов приводит её к истинам, к которым она была не готова.
+        </p>
+        <div class="hero-cta">
+          <a class="btn" href="#read">Читать главы</a>
+        </div>
+      </div>
+
+      <div class="cover">
+        <!--
+          🖼️ АРТ ГЛАВНОЙ ГЕРОИНИ (ЭЛИС)
+          Чтобы загрузить арт:
+          1) Создай папку images рядом с этим HTML-файлом
+          2) Положи туда картинку
+          3) Назови файл: alice.jpg (или .png)
+          4) Если меняешь название — поменяй src ниже
+        -->
+        <img src="images/alice.jpg" alt="Элис — главная героиня" style="width:75%; aspect-ratio:2/3; object-fit:cover; border:1px solid rgba(243,231,207,.3);" />
+      </div>
+    </div>
+    </div>
+
+    <section>
+      <h2>О книге</h2>
+      <div class="paper">
+        <p>
+          Элис — путешественница и торговка, наблюдательница чужих судеб.
+          Она старается выглядеть сильной, скрывая сомнения и страхи.
+        </p>
+        <p>
+          Попав в иной мир, она ищет ответ на главный вопрос — как и зачем.
+          Но чем глубже она продвигается, тем яснее становится:
+          истина сложнее, чем кажется на первый взгляд.
+        </p>
+      </div>
+    </section>
+
+    <section id="read">
+      <h2>Чтение</h2>
+      <div class="paper">
+
+        <!--
+          ⚠️ ОБРАТИ ВНИМАНИЕ
+          ЗДЕСЬ МЕНЯЕТСЯ КОЛИЧЕСТВО ГЛАВ
+          Просто обновляй число ниже, когда выйдет новая глава
+        -->
+        <p><strong>Доступно глав:</strong> 7</p>
+
+        <p class="muted">
+          Все главы опубликованы в Telegram-канале автора:
+          <br>
+          <a href="https://t.me/lost_soul_o" target="_blank">t.me/lost_soul_o</a>
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Автор</h2>
+      <div class="paper author">
+        <strong>Митин</strong>
+        <p class="muted">
+          Автор философского фэнтези. «Затерянная душа» — история
+          о поиске смысла, личности и правды, скрытой за мирами.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container">
+    © <span id="year"></span> Митин
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
